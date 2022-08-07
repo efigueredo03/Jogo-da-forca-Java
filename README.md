@@ -6,4 +6,6 @@ Para jogar basta seguir as intruções que o programa exibe.
 Você escolhe um tema, em seguida a dificuldade, que representa o total de chances que você terá para acertar a palavra.
 A tela de jogo é apresentada, com duas opções, Jogar e Sair.
 Para jogar basta digitar seu chute. Se ele não pertencer a palavra, você perde uma chance.
-Se não tive mais chances você perde. Se acertar todas as letras da palavra. Você vence.
+Se não tive mais chances você perde. Se acertar todas as letras da palavra, você vence.
+
+Para sair, basta voltar a tela de jogo e digitar a opção Sair.
