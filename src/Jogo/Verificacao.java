@@ -8,7 +8,6 @@ public class Verificacao {
 			int valor = -1;
 			while (true) {
 				valor = palavra.indexOf(jogada, valor+1);
-				System.out.println(valor);
 				if (valor == -1) {
 					String resultado = palavraRetorno.toString();
 					return resultado;
@@ -20,8 +19,8 @@ public class Verificacao {
 		}
 	}
 	
-	public static boolean verificarJogo(int numeroMaximaDeRodadas, int rodadaAtual) {
-		if (rodadaAtual == numeroMaximaDeRodadas) {
+	public static boolean verificarJogo(int chances) {
+		if (chances == 0) {
 			return false;
 		} else {
 			return true;
@@ -33,6 +32,20 @@ public class Verificacao {
 			return false;
 		}
 		return true;
+	}
+	
+	public static boolean verificarJogadaRepetida(String palavraEscondida, String jogada) {
+		if (palavraEscondida.contains(jogada)) {
+			return true;
+		}
+		return false;
+	}
+	
+	public static boolean verificarSairContinuarJogador(String resposta) {
+		if (resposta.toLowerCase().equals("jogar")) {
+			return true;
+		}
+		return false;
 	}
 	
 }
